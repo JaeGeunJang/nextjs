@@ -15,11 +15,15 @@ function Headline(){
 
 function Titles(){
 	return(
-		<div>
-			<h1 className={styles.title}>
-				<a href="https://nextjs-six-kappa-95.vercel.app">JaeGeun</a>
-			</h1>
-		</div>
+		<h1 className={styles.title}>
+			<a href="https://nextjs-six-kappa-95.vercel.app">JaeGeun</a>
+		</h1>
+	)
+}
+
+function rightTitle(){
+	return(
+		<a href="matilto:jaekeun950@gmail.com">이메일</a>
 	)
 }
 
@@ -124,6 +128,7 @@ function PrintIcons(props){
 			</div>
 		)
 	}
+	
 }
 
 export default function Home() {
@@ -132,10 +137,14 @@ export default function Home() {
 	
 	return (
 		<div className={styles.container}>
+			{/* <a href="#" onClick={(event)=>{
+			event.preventDefault();
+			if (clicks===styles.introduce_click)
+				{clickc(styles.introduce); clists(styles.scroller)}}} className={styles.clickarea}> */}
 			<Headline></Headline>
-			
+				
 				<main className={styles.main}>
-				<div className={styles.rightup}><a href="mailto:jaekeun950@gmail.com"><br/>Gmail</a></div>
+					<rightTitle></rightTitle>
 					<Titles></Titles>
 					<SearchBar clicks = {clicks} lists = {lists}
 					onChangeMode={(el)=>clickc(el)}
@@ -143,6 +152,7 @@ export default function Home() {
 					</SearchBar>
 					<PrintIcons click={clicks}></PrintIcons>
 				</main>
+			{/* </a> */}
 		</div>
 	)
 }

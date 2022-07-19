@@ -15,13 +15,15 @@
 }
 
 .main {
-	min-height: 100vh;
-	padding: 4rem 0;
+	height: 100vh;
+	padding: 0;
 	flex: 1;
  	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: right;
 }
+
 
 .title a {
 	color: #FFFFFF;
@@ -31,7 +33,17 @@
 .title {
 	margin: 0;
 	line-height: 2;
-	font-size: 4.2vw;
+	margin-top: 1.2em;
+	font-size: 5em;
+}
+
+.rightup {
+	position:relative;
+	transform: translate(45vw);
+	margin: 0;
+	background-color:#272727;
+	color: white;
+	text-decoration: none;
 }
 
 .introduce {
@@ -48,7 +60,6 @@
 	padding: 0.7em;
 	width: 70%;
 	max-width: 560px;
-	cursor: default;
 	line-height: 2em;
 }
 
@@ -61,7 +72,6 @@
 	line-height: 1.2em;
 	position: relative;
 	overflow: hidden;
-	cursor: default;
 }
 
 .scroller span {
@@ -81,6 +91,7 @@
 	top: 0;
 	left: 50%;
 	text-align: center;
+	cursor: default;
 }
 
 @keyframes slide {
