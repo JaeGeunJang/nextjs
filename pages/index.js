@@ -3,6 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+	const clickno = styles.introduce
+	const clickys = styles.introduce_click
+	
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -13,20 +16,64 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<h1 className={styles.title}>
-				<a href="https://nextjs-six-kappa-95.vercel.app">Jaegeun</a>
+				<a href="https://nextjs-six-kappa-95.vercel.app">JaeGeun</a>
 				</h1>
-
-				<div className={styles.introduce}>
+				
+				<div className={clickno}>
 					<div className={styles.scroller}>
 						<span>
-						안녕하세요. 저는 장재근입니다.<br/>
-						AI 개발쪽을 꿈꾸고 있습니다.<br/>
-						이게 저의 첫 홈페이지가 되겠군요 <br/>
-
+							안녕하세요. 저는 장재근입니다.<br/>
+							현재 AI 개발쪽으로 공부중입니다.<br/>
+							이게 저의 첫 홈페이지가 되겠군요 <br/>
+							잘부탁드립니다! <br/>
 						</span>
 					</div>
 				</div>
+
+				<div className={styles.iconarea}>
+					<div className={styles.icons}>
+					<a href="https://github.com/JaeGeunJang">
+							<figure>
+							<Image src="/github.svg" alt="Github Logo" 
+							width={50} height={50} />
+							<figcaption>github</figcaption>
+							</figure>
+					</a>
+					</div>
+					
+					<div className={styles.icons}>
+					<a href="https://jk-codingbeginner.tistory.com/">
+						<figure>
+							<Image src="/tistory.svg" alt="Tistory Logo" 
+							width={50} height={50} />
+							<figcaption>tistory</figcaption>
+						</figure>
+					</a>
+					</div>
+
+					<div className={styles.icons}>
+					<a href="https://www.instagram.com/slow._.turtle/">
+						<figure>
+							<Image src="/insta.svg" alt="insta Logo" 
+							width={50} height={50} />
+							<figcaption>Insta</figcaption>
+						</figure>
+					</a>
+					</div>
+
+					<div className={styles.icons}>
+					<a href="https://www.facebook.com/jaekeun95/">
+						<figure>
+							<Image src="/facebook.svg" alt="FB Logo" 
+							width={50} height={50} />
+							<figcaption>Fb</figcaption>
+						</figure>
+					</a>
+					</div>
+				</div>
+
 			</main>
+
 		</div>
 	)
 }
