@@ -7,6 +7,11 @@
 	padding: 0 2rem;
 	background-color: #272727;
 	font: 'Noto Sans'; 
+	
+}
+
+.clickarea {
+	cursor: default;
 }
 
 .main {
@@ -29,11 +34,34 @@
 	font-size: 5rem;
 }
 
+.introduce {
+	background: #FFFFFF;
+	border-radius: 100px;
+	padding: 0.7em;
+	width: 70%;
+	max-width: 560px;
+}
+
+.introduce_click {
+	background: #FFFFFF;
+	border-radius: 0.7em;
+	padding: 0.7em;
+	width: 70%;
+	max-width: 560px;
+	cursor: default;
+	line-height: 2em;
+}
+
+.introduce_click hr{
+	color: #FFFFFF
+}
+
 .scroller {
 	height: 1.2em;
 	line-height: 1.2em;
 	position: relative;
 	overflow: hidden;
+	cursor: default;
 }
 
 .scroller span {
@@ -45,29 +73,22 @@
 	animation: slide 6s infinite;
 }
 
+.notscroller {
+	cursor: default;
+}
+.scroller span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	text-align: center;
+}
+
 @keyframes slide {
 	00% { top: 0; }
 	25% { top: -1.2em; }
 	50% { top: -2.4em; }
 	75% { top: -3.6em; }
 }
-
-.introduce {
-	background: #FFFFFF;
-	border-radius: 100px;
-	padding: 0.7em;
-	width: 70%;
-	max-width: 560px;
-}
-
-.introduce:focus {
-	background: #FFFFFF;
-	border-radius: 0.7em;
-	padding: 0.7em;
-	width: 70%;
-	max-width: 560px;
-}
-
 
 .iconarea {
 	margin: 1em;
@@ -82,7 +103,8 @@
 
 .icons{
 	text-align: center;
-	border: 1px solid #000000;
+	color: white;
+	font-size: 0.85em;
 	border-radius: 0.5em;
 	object-fit:cover;
 }
@@ -92,3 +114,4 @@
 .icons:hover {
 	background-color: #3D3D3D;
 }
+
