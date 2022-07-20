@@ -13,6 +13,20 @@ function Headline(){
 	)
 }
 
+function RightIcon() {
+	return(
+		<div className={styles.rightup}>
+			<span>
+				<a href="mailto:jaekeun950@gmail.com">Gmail</a> {" "}
+			</span>
+			<span className={styles.rightuppan}>
+				<a href="/index2"><Image src="/user.png" alt="user Logo" width={35} height={35}></Image></a>
+			</span>
+		</div>
+		
+	)
+}
+
 function Titles(){
 	return(
 		<div>
@@ -77,7 +91,6 @@ function SearchBar(props){
 	
 }
 
-
 function PrintIcons(props){
 	if (props.click == styles.introduce){
 		return (
@@ -132,10 +145,9 @@ export default function Home() {
 	
 	return (
 		<div className={styles.container}>
+			<RightIcon></RightIcon>
 			<Headline></Headline>
-			
 				<main className={styles.main}>
-				<div className={styles.rightup}><a href="mailto:jaekeun950@gmail.com"><br/>Gmail</a></div>
 					<Titles></Titles>
 					<SearchBar clicks = {clicks} lists = {lists}
 					onChangeMode={(el)=>clickc(el)}
