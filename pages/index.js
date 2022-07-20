@@ -20,7 +20,7 @@ function RightIcon() {
 				<a href="mailto:jaekeun950@gmail.com">Gmail</a> {" "}
 			</span>
 			<span className={styles.rightuppan}>
-				<a href="/index2"><Image src="/user.png" alt="user Logo" width={35} height={35}></Image></a>
+				<a href="/index2/"><Image src="/user.png" alt="user Logo" width={35} height={35}></Image></a>
 			</span>
 		</div>
 		
