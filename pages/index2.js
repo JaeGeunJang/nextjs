@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
+import Link from 'next/link'
 
 function Headline(){
 	return (
@@ -24,9 +25,9 @@ function Titles() {
 function Body(){
 	return(
 			<div className={styles.idx2body}>
-				<a href="/">
+				<Link href={"/"}>
 					<Image src="/profile.png" alt="profile" width={250} height={250}></Image>
-				</a>
+				</Link>
 				
 				<p><b>Name</b></p>
 				<p>Jang JaeGeun</p><br/>

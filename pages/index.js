@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { useState } from 'react'
+import Link from 'next/link'
 
 function Headline(){
 	return (
@@ -20,7 +21,7 @@ function RightIcon() {
 				<a href="mailto:jaekeun950@gmail.com">Gmail</a> {" "}
 			</span>
 			<span className={styles.rightuppan}>
-				<a href="/index2/"><Image src="/user.png" alt="user Logo" width={35} height={35}></Image></a>
+				<Link href={"/index2/"}><Image src="/user.png" alt="user Logo" width={35} height={35}></Image></Link>
 			</span>
 		</div>
 		
